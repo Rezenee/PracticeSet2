@@ -12,10 +12,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         // PASTE CODE YOU WANT TO TEST HERE
 
-        int dollars = 40;
-        int dollarsToYen = 119;
-        int yen = dollarsToYen * dollars;
-        display(yen);
+        String firstName = "Lyla";
+        String lastName = "Fujiwara";
+        String contactInfo = firstName + " " + lastName;
+        contactInfo = "<" + lastName + "." + firstName + "@justjava.com>";
+        display(contactInfo);
     }
 
     /**
