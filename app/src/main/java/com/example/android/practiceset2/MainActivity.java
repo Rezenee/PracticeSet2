@@ -9,25 +9,27 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // PASTE CODE YOU WANT TO TEST HERE
         displayForTeamA(9);
     }
+    int scoreTeamA = 0;
 
-    /**
-     * Displays the given score for Team A.
-     */
 
     public void addThreeForTeamA(View v){
-        displayForTeamA(3);
+        scoreTeamA +=3;
+        displayForTeamA(scoreTeamA);
     }
     public void addTwoForTeamA(View v){
-        displayForTeamA(2);
+        scoreTeamA +=2;
+        displayForTeamA(scoreTeamA);
     }
     public void addOneForTeamA(View v){
-        displayForTeamA(1);
+        scoreTeamA +=1;
+        displayForTeamA(scoreTeamA);
     }
     public void displayForTeamA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
